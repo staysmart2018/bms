@@ -21,3 +21,9 @@
 .card-btn{
     padding: 0.5rem;
 }
+.screen-size{
+    min-height: 100vh;
+}
+.label-w60{
+    width: 60vw;
+}
