@@ -1,0 +1,23 @@
+.card-image{
+    height: 50vh;
+    object-fit: cover;
+}
+.logo{
+    height: 20vh;
+    width: 20vh;
+    object-fit: contain;
+    border-radius: 50%;
+    border-color: rgba(255, 0, 0, 0.5);
+    border-style: solid;
+    padding: 0.5rem;
+}
+.card-body{
+    margin: 2rem 0;
+}
+.card-footer{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.card-btn{
+    padding: 0.5rem;
+}
