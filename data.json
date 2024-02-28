@@ -1,11 +1,11 @@
 {
     "O":[["KD Hospital",15],["Civil Hospital",17],["BL Hospital",56]],
     "O+":[["KD Hospital",5],["Civil Hospital",67]],
-    "O-":[["KD Hospital",50],["Civil Hospital",34]],
+    "O-":[["KD Hospital",50],["Civil Hospital",34],["Ahmedabad Hospital",10]],
     "A+":[["KD Hospital",45],["Civil Hospital",11]],
-    "A-":[["KD Hospital",25],["Civil Hospital",23]],
-    "B+":[["KD Hospital",35],["Civil Hospital",63]],
-    "B*":[["KD Hospital",75],["Civil Hospital",5]],
+    "A-":[["KD Hospital",25],["Civil Hospital",23],["AIMS",12]],
+    "B+":[["KD Hospital",35],["Civil Hospital",63],["Gandhi Hospital",5]],
+    "B-":[["KD Hospital",75],["Civil Hospital",5],["BL Hospital",6],["Gandhi Hospital",52],["Ahmedabad Hospital",10]],
     "AB+":[["KD Hospital",15],["Civil Hospital",77]],
-    "AB-":[["KD Hospital",5],["Civil Hospital",7]]
+    "AB-":[["KD Hospital",5],["Civil Hospital",7],["BL Hospital",7],["Gandhi Hospital",9]]
 }
