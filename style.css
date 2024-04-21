@@ -27,3 +27,11 @@
 .label-w60{
     width: 60vw;
 }
+.card-img-fixed {
+    height: 300px; /* Adjust this value to your desired height */
+    object-fit: cover; /* Ensures the image covers the specified height while maintaining aspect ratio */
+}
+
+.gift{
+    margin: 50px;
+}

@@ -6,12 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rakt</title>
 
-    <!-- bootstrap css -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- Local css -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Internal CSS for Card and Layout Consistency -->
+    <style>
+        /* Consistent Card Heights */
+        .card {
+            min-height: 300px; /* Ensure cards have a minimum height for consistency */
+            margin-bottom: 20px; /* Add margin between cards */
+        }
+
+        .card-img-top {
+            height: 150px; /* Fixed height for card images */
+            object-fit: cover; /* Ensure images cover the height without distortion */
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) { /* For small screens and tablets */
+            .navbar {
+                padding: 10px; /* Adjust navbar padding */
+            }
+
+            .card {
+                min-height: 250px; /* Adjust minimum card height for smaller screens */
+                margin-bottom: 30px; /* Increase margin between cards for smaller screens */
+            }
+
+            .row {
+                margin-left: 0;
+                margin-right: 0; /* Ensure proper spacing in smaller screens */
+            }
+        }
+
+        @media (max-width: 576px) { /* For extra-small screens and phones */
+            .card {
+                min-height: 200px; /* Further adjustment for extra-small screens */
+                margin-bottom: 40px; /* Increase margin for better spacing */
+            }
+
+            .navbar {
+                text-align: center; /* Center navbar text for smaller screens */
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -21,19 +60,17 @@
         <div id="Navbar-Container">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="navbar-brand fw-bolder" href="index.html"><img src="images\Blood.png" alt="Logo"
-                            height="24" class="d-inline-block align-text-top" style="margin: 2px;">Rakt</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="navbar-brand fw-bolder" href="index.html"><img src="images/Blood.png" alt="Logo" height="24" class="d-inline-block align-text-top">Rakt</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item mx-1 fw-bolder">
-                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item mx-1 fw-bolder">
-                                <a class="nav-link active" href="donate.html">Donate Blood</a>
+                                <a class="nav-link" href="donate.html">Donate Blood</a>
                             </li>
                             <li class="nav-item mx-1 fw-bolder">
                                 <a class="nav-link" href="search.html">Search Blood</a>
@@ -44,19 +81,19 @@
                         </ul>
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item mx-2 my-2 fw-bolder">
-                                <a href="login.html" class="btn btn-outline-success nav-btn" role="button">Login</a>
+                                <a href="login.html" class="btn btn-outline-success nav-btn">Login</a>
                             </li>
                             <li class="nav-item mx-2 my-2 fw-bolder">
-                                <a href="register.html" class="btn btn-outline-danger nav-btn"
-                                    role="button">Register</a>
+                                <a href="register.html" class="btn btn-outline-danger nav-btn">Register</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
+
         <!-- Home-Container -->
-        <div id="Donate-Container" class="mt-3 container screen-size d-flex align-items-center">
+        <div id="Donate-Container" class="mt-3 container d-flex align-items-center">
             <div class="mb-5" id="donate-info">
                 <h1 class="my-5"><span class="text-danger fw-bolder">D</span>onate Here</h1>
                 <form class="row g-3" onsubmit="showInfo()">
@@ -79,7 +116,7 @@
                             <option value="O+">O+</option>
                             <option value="O-">O-</option>
                             <option value="A+">A+</option>
-                            <option value="A-">A-</option>
+                            option value="A-">A-</option>
                             <option value="B+">B+</option>
                             <option value="B-">B-</option>
                             <option value="AB+">AB+</option>
@@ -97,7 +134,7 @@
                         </select>
                     </div>
                     <div class="col-6">
-                        <label for="selectTime" class="form-label">Select Slot</label>
+                        <label for="selectTime" class="form-label">Select Slot</select>
                         <select id="selectTime" class="form-select">
                             <option value="8:00 am" selected>8:00 am</option>
                             <option value="10:00 am">10:00 am</option>
@@ -111,16 +148,97 @@
                 </form>
             </div>
         </div>
+
+        <!-- Rewards for Donating Blood -->
+        <div class="container mt-5 gift">
+            <h2 class="text-center my-4">Rewards for Donating Blood</h2>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://img.freepik.com/premium-vector/vector-handdrawn-doodle-fruits-vegetables-gift-voucher-templates-gift-card-design-illustration_80590-1276.jpg"
+                            class="card-img-top card-img-fixed" alt="Reward 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Gift Voucher</h5>
+                            <p class="card-text">Receive a gift voucher for participating in our blood donation drive.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4 my-4">
+                    <div class="card">
+                        <img src="https://img.freepik.com/premium-vector/seamless-pattern-with-health-checkup-doodle-elements-health-checkup-pattern-vector-illustration_900711-618.jpg"
+                            class="card-img-top card-img-fixed" alt="Reward 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Free Health Checkup</h5>
+                            <p class="card-text">Get a free health checkup as a token of appreciation for donating blood.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4 my-4">
+                    <div class="card">
+                        <img src="https://img.freepik.com/premium-vector/free-vector-blood-donation-certificate-template-red-background-recognition-life-saving_764504-438.jpg"
+                            class="card-img-top card-img-fixed" alt="Reward 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Blood Donation Certificate</h5>
+                            <p class="card-text">Receive a certificate recognizing your contribution to saving lives.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section for FAQs -->
+        <div id="FAQ-Container" class="container mt-5">
+            <h2 class="text-center">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <!-- FAQ 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq1Header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
+                            aria-expanded="true" aria-controls="faq1">
+                            What are the requirements for donating blood?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1Header"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            To donate blood, you must be in good health, weigh at least 50 kg, and be between 18 and 60
+                            years old.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="accordion-item">
+                    <h2 
+class="accordion-header" id="faq2Header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                            How often can I donate blood?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2Header"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can donate whole blood every 12 weeks, but plasma and platelets can be donated more
+                            frequently.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- footer -->
         <div id="footer" class="container">
             <p class="fw-bold text-center">Made with ❤️ in Ahmedabad</p>
         </div>
-        <!-- javascript -->
-        <script src="donate.js"></script>
-        <!-- bootstrap js -->
+        <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
+    </div>
 </body>
-
 </html>
