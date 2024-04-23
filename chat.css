@@ -4,15 +4,15 @@ body {
 }
 
 .chatbot-container {
-    margin-top: 50px;
-    padding: 20px;
+    margin-top: 20px; /* Reduced top margin */
+    padding: 15px; /* Adjusted padding for smaller screens */
     background: linear-gradient(to right, #f3f4f6, #e8f5e9); /* Subtle gradient background */
     border-radius: 15px; /* Smooth edges */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
 }
 
 .chat-window {
-    height: 350px; /* Slightly increased height */
+    height: 350px; /* Larger height for better visibility */
     overflow-y: auto;
     border: 1px solid #ccc; /* Softer border color */
     padding: 15px; /* Increased padding for readability */
@@ -29,6 +29,8 @@ body {
 .btn {
     margin: 5px; /* Ensure proper spacing between buttons */
     transition: background 0.3s, transform 0.3s; /* Smooth hover effects */
+    min-width: 100px; /* Minimum width for better touch targets */
+    padding: 10px; /* Larger padding for mobile touch interaction */
 }
 
 .btn-primary {
@@ -46,12 +48,24 @@ body {
 
 @media (max-width: 768px) {
     .chat-window {
-        height: 300px; /* Adjusted chat window height for smaller screens */
+        height: 450px; /* Increased height for tablets and larger mobiles */
+    }
+
+    .chatbot-container {
+        padding: 10px; /* Adjusted padding for smaller screens */
     }
 }
 
 @media (max-width: 576px) {
     .chat-window {
-        height: 250px; /* Further adjustment for extra-small screens */
+        height: 500px; /* Further increased height for extra-small screens */
+    }
+
+    .chatbot-container {
+        padding: 5px; /* Further adjustment for extra-small screens */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Reduced font size for smaller screens */
     }
 }
