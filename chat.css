@@ -1,0 +1,57 @@
+body {
+    background-color: #e8f5e9; /* Soothing light green background */
+    font-family: Arial, sans-serif; /* Better font choice for readability */
+}
+
+.chatbot-container {
+    margin-top: 50px;
+    padding: 20px;
+    background: linear-gradient(to right, #f3f4f6, #e8f5e9); /* Subtle gradient background */
+    border-radius: 15px; /* Smooth edges */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+}
+
+.chat-window {
+    height: 350px; /* Slightly increased height */
+    overflow-y: auto;
+    border: 1px solid #ccc; /* Softer border color */
+    padding: 15px; /* Increased padding for readability */
+    border-radius: 10px; /* Smooth edges for the chat window */
+    background: #ffffff; /* Solid white background for chat messages */
+    transition: all 0.3s ease-in-out; /* Smooth transitions */
+}
+
+.input-container {
+    text-align: center;
+    padding-top: 10px; /* Extra padding for spacing */
+}
+
+.btn {
+    margin: 5px; /* Ensure proper spacing between buttons */
+    transition: background 0.3s, transform 0.3s; /* Smooth hover effects */
+}
+
+.btn-primary {
+    background-color: #0288d1; /* Bright blue */
+}
+
+.btn-secondary {
+    background-color: #757575; /* Neutral grey */
+}
+
+.btn:hover {
+    background-color: #00796b; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+@media (max-width: 768px) {
+    .chat-window {
+        height: 300px; /* Adjusted chat window height for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .chat-window {
+        height: 250px; /* Further adjustment for extra-small screens */
+    }
+}

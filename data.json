@@ -1,11 +1,65 @@
 {
-    "O":[["KD Hospital",15],["Civil Hospital",17],["BL Hospital",56]],
-    "O+":[["KD Hospital",5],["Civil Hospital",67]],
-    "O-":[["KD Hospital",50],["Civil Hospital",34],["Ahmedabad Hospital",10]],
-    "A+":[["KD Hospital",45],["Civil Hospital",11]],
-    "A-":[["KD Hospital",25],["Civil Hospital",23],["AIMS",12]],
-    "B+":[["KD Hospital",35],["Civil Hospital",63],["Gandhi Hospital",5]],
-    "B-":[["KD Hospital",75],["Civil Hospital",5],["BL Hospital",6],["Gandhi Hospital",52],["Ahmedabad Hospital",10]],
-    "AB+":[["KD Hospital",15],["Civil Hospital",77]],
-    "AB-":[["KD Hospital",5],["Civil Hospital",7],["BL Hospital",7],["Gandhi Hospital",9]]
+    "O": [
+        ["KD Hospital", 15],
+        ["Civil Hospital", 17],
+        ["BL Hospital", 56],
+        ["Apollo Hospital", 25],
+        ["City Hospital", 30]
+    ],
+    "O+": [
+        ["KD Hospital", 5],
+        ["Civil Hospital", 67],
+        ["BL Hospital", 10],
+        ["City Hospital", 20]
+    ],
+    "O-": [
+        ["KD Hospital", 50],
+        ["Civil Hospital", 34],
+        ["Ahmedabad Hospital", 10],
+        ["Apollo Hospital", 15],
+        ["Gandhi Hospital", 12]
+    ],
+    "A+": [
+        ["KD Hospital", 45],
+        ["Civil Hospital", 11],
+        ["Apollo Hospital", 18],
+        ["BL Hospital", 22]
+    ],
+    "A-": [
+        ["KD Hospital", 25],
+        ["Civil Hospital", 23],
+        ["AIMS", 12],
+        ["Gandhi Hospital", 19],
+        ["Apollo Hospital", 17]
+    ],
+    "B+": [
+        ["KD Hospital", 35],
+        ["Civil Hospital", 63],
+        ["Gandhi Hospital", 5],
+        ["BL Hospital", 27],
+        ["Apollo Hospital", 30]
+    ],
+    "B-": [
+        ["KD Hospital", 75],
+        ["Civil Hospital", 5],
+        ["BL Hospital", 6],
+        ["Gandhi Hospital", 52],
+        ["Ahmedabad Hospital", 10],
+        ["City Hospital", 28],
+        ["Apollo Hospital", 35]
+    ],
+    "AB+": [
+        ["KD Hospital", 15],
+        ["Civil Hospital", 77],
+        ["Apollo Hospital", 10],
+        ["BL Hospital", 15]
+    ],
+    "AB-": [
+        ["KD Hospital", 5],
+        ["Civil Hospital", 7],
+        ["BL Hospital", 7],
+        ["Gandhi Hospital", 9],
+        ["Apollo Hospital", 12],
+        ["City Hospital", 18]
+    ]
 }
